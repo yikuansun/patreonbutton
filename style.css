@@ -1,0 +1,30 @@
+
+body {
+    font-family: 'Trebuchet MS', Arial;
+}
+
+input[type=text] {
+    padding: 6px;
+    outline: none!important;
+    border: 2px solid darkgrey;
+    border-radius: 5px;
+    font-family: 'Trebuchet MS', Arial;
+}
+
+input[type=text]:focus {
+    border-color: grey;
+}
+
+#toCopy {
+    width: 500px;
+}
+
+#copybutton {
+    color: deepskyblue;
+    text-decoration: underline;
+}
+
+#copybutton:hover {
+    color: skyblue;
+    cursor: pointer;
+}
