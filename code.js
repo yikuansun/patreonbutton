@@ -9,4 +9,14 @@ document.querySelector("#username").addEventListener("input", function() {
 document.querySelector("#copybutton").addEventListener("click", function() {
     navigator.clipboard.writeText(document.querySelector("#toCopy").value);
     document.querySelector("#toCopy").select();
+    this.innerText = "Copied";
+    this.style.color = "grey";
+    this.style.textDecoration = "none";
+    this.style.cursor = "default";
+    setTimeout(function() {
+        this.innerText = "Copy to clipboard";
+        this.style.color = "";
+        this.style.textDecoration = "";
+    this.style.cursor = "";
+    }.bind(this), 1650);
 });
