@@ -1,0 +1,28 @@
+#buttonNormal, #buttonHover {
+    display: inline-block;
+    position: absolute;
+    left: 50vw;
+    top: 50vh;
+    transform: translate(-50%, -50%);
+}
+
+body {
+    margin: 0;
+    background-color: transparent;
+    overflow: hidden;
+}
+
+a {
+    width: 100vw;
+    height: 100vh;
+    display: block;
+}
+
+#buttonNormal {
+    opacity: 1;
+    transition: opacity 0.2s;
+}
+
+#buttonNormal:hover {
+    opacity: 0;
+}
