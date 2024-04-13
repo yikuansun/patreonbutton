@@ -1,21 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <link rel="stylesheet" href="style.css" />
-        <title>Patreon Button Generator</title>
-    </head>
-    <body>
-        <label for="username">Patreon page URL:</label>
-        <span style="color: grey;">patreon.com/</span><input id="username" type="text" value="yikuans" spellcheck="false" />
-        <br /> <br />
+<html data-theme="dark" lang="es">
+  <head>
+    <link rel="stylesheet" href="style.css" />
+    <title>Patreon Button Generator</title>
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@picocss/pico@2/css/pico.min.css"
+    />
+  </head>
+  <body>
+    <div class="container">
+      <h1>Patreon Button Generator</h1>
+      <p>
+        This tool generates a button that links to your Patreon page. Enter your
+        Patreon page URL below, and click the "Copy to clipboard" button to copy
+        the code to your clipboard.
+      </p>
+      <fieldset>
+        <label for="username">Patreon username:</label>
+        <input
+          id="username"
+          type="text"
+          value=""
+          spellcheck="false"
+          placeholder="patreon.com/username"
+        />
+      </fieldset>
+      <fieldset role="group">
         <input type="text" readonly id="toCopy" spellcheck="false" />
-        <a id="copybutton">Copy to clipboard</a>
-        <br /> <br />
-        <img src="previewicon.png" height="16" style="margin-bottom: -2px; margin-right: 2px;" /> <span style="color: #706c64">Preview</span>
-        <div id="button_code">
-            <iframe src="https://yikuansun.github.io/patreonbutton/widget?uname=yikuans" width="180" height="36" style="border: 0;"></iframe>
-            <br />
-        </div>
-        <script src="code.js"></script>
-    </body>
+        <button id="copybutton">Copy to clipboard</button>
+      </fieldset>
+
+      <img
+        src="previewicon.png"
+        height="16"
+        style="margin-bottom: -2px; margin-right: 2px"
+      />
+      <span style="color: #706c64">Preview</span>
+      <div id="button_code">
+        <iframe
+          src="https://ulf-frostypaw.github.io/patreon-button-widget/widget.html?uname=ulf-frostypaw"
+          style="width: 100vh;"
+        ></iframe>
+      </div>
+    </div>
+    <script src="code.js"></script>
+  </body>
 </html>
