@@ -1,28 +1,57 @@
-#buttonNormal, #buttonHover {
-    display: inline-block;
-    position: absolute;
-    left: 50vw;
-    top: 50vh;
-    transform: translate(-50%, -50%);
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --primary-color: #FF424D;
+        --secondary-color: #e73942;
+        --text-color: #fff;
+        --background-color: #000;
+    }
+}
+@media (prefers-color-scheme: light){
+    :root {
+        --primary-color: #FF424D;
+        --secondary-color: #e73942;
+        --text-color: #fff;
+        --background-color: #fff;
+    }
 }
 
-body {
+html, body {
     margin: 0;
-    background-color: transparent;
-    overflow: hidden;
+    box-sizing: border-box;
+    color: var(--text-color);
+    background-color: var(--background-color);
 }
 
-a {
-    width: 100vw;
-    height: 100vh;
-    display: block;
+.support-button {
+    display: flex;
+    padding: 12px 24px;
+    gap: 16px;
+    font-size: 16px;
+    text-align: center;
+    text-decoration: none;
+    color: var(--text-color);
+    background-color: var(--primary-color);
+    cursor: pointer;
+    align-items: center;
+    transition: 100ms;
+    width: 100%;
+    max-width: 250px;
 }
 
-#buttonNormal {
-    opacity: 1;
-    transition: opacity 0.2s;
+.support-button:hover {
+    background-color: var(--secondary-color);
 }
 
-#buttonNormal:hover {
-    opacity: 0;
+.regular {
+    font-family: "Poppins", sans-serif;
+    font-weight: 400;
+    font-style: normal;
+}
+
+.bold {
+    font-family: "Poppins", sans-serif;
+    font-weight: 700;
+    font-style: normal;
 }
