@@ -2,7 +2,7 @@ document.querySelector("#button_code").innerHTML = "" + document.querySelector("
 document.querySelector("#toCopy").value = document.querySelector("#button_code").innerHTML;
 
 document.querySelector("#username").addEventListener("input", function() {
-    document.querySelector("#button_code iframe").src = `https://ulf-frostypaw.github.io/widget.html?username=${this.value}`;
+    document.querySelector("#button_code iframe").src = `https://ulf-frostypaw.github.io/patreon-button-widget/widget.html?username=${this.value}`;
     document.querySelector("#toCopy").value = document.querySelector("#button_code").innerHTML;
 });
 
