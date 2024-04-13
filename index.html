@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html data-theme="dark" lang="es">
+<html data-theme="dark" lang="en">
   <head>
     <link rel="stylesheet" href="style.css" />
     <title>Patreon Button Generator</title>
@@ -30,19 +30,27 @@
         <input type="text" readonly id="toCopy" spellcheck="false" />
         <button id="copybutton">Copy to clipboard</button>
       </fieldset>
-
-      <img
-        src="previewicon.png"
-        height="16"
-        style="margin-bottom: -2px; margin-right: 2px"
-      />
-      <span style="color: #706c64">Preview</span>
-      <div id="button_code">
-        <iframe
-          src="https://ulf-frostypaw.github.io/patreon-button-widget/widget.html?uname=ulf-frostypaw"
-          style="width: 100vh;"
-        ></iframe>
-      </div>
+      <fieldset>
+        <span style="color: #706c64">Preview</span>
+        <div id="button_code">
+          <iframe
+            src="https://ulf-frostypaw.github.io/widget.html?username=ulf-frostypaw"
+            height="68"
+            width="298"
+            scrolling="no"
+            data-theme="light"
+            style="border-radius: 10px; overflow: hidden"
+          ></iframe>
+        </div>
+      </fieldset>
+      <footer>
+        <article>
+          <p>
+            This is an open-source project. Leave your contribution at
+            <a href="https://github.com/ulf-frostypaw/patreon-button-widget" target="_blank">GitHub</a>.
+          </p>
+        </article>
+      </footer>
     </div>
     <script src="code.js"></script>
   </body>
